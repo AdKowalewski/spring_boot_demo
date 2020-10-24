@@ -2,7 +2,7 @@
     <head>
         <meta charset="UTF-8">
         <title>Users Management Page</title>
-        <link th:rel="stylesheet" th:href="@{webjars/bootstrap/4.0.0-2/css/bootstrap.min.css} "/>
+        <link th:rel="stylesheet" th:href="@{/webjars/bootstrap/4.0.0-2/css/bootstrap.min.css}"/>
     </head>
     <body>
         <table class="table">
@@ -22,7 +22,8 @@
                     <td th:text="${user.firstName}"></td>
                     <td th:text="${user.lastName}"></td>
                     <td>
-                        <button type="button" class="btn btn-outline-success"><a href="updateUser.html">Edit</a></button>
+                        <button type="button" class="btn btn-outline-success">Edit</button>
+<!--                        <button type="button" class="btn btn-outline-success"><a href="updateUser.html">Edit</a></button>-->
                         <button type="button" class="btn btn-outline-danger">Delete</button>
                     </td>
                 </tr>
